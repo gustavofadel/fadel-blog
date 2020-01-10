@@ -1,0 +1,17 @@
+.sidebar {
+  background-color: #FFFFFF;
+  border-radius: .50rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+
+.sidebar .sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebar .sidebar-description {
+  line-height: 1.5;
+  margin-top: 1rem;
+  text-align: justify;
+}

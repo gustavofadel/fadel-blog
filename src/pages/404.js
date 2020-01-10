@@ -1,14 +1,11 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-
-import 'minireset.css'
 
 import Layout from '../components/Layout'
 
 export default () => (
   <Layout>
     <p>
-      Página inicial
+      Page not found :(
     </p>
   </Layout>
 )
