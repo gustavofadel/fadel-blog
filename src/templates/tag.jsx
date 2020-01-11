@@ -19,7 +19,7 @@ export default class Tag extends Component {
             description={`Posts com a tag: "${tag}" no Fadel's CV`} 
             url={pathname}
           />
-          <h2 style={{ fontSize: '22px', padding: '0px 15px' }}>
+          <h2 style={{ color: '#FFF', fontSize: '22px', padding: '0px 15px' }}>
             Posts with {tag} tag
           </h2>
           <Posts data={data}/>
