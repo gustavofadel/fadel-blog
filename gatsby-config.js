@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     description: config.siteDescription,
-    siteUrl: "https://codestackbrasil.netlify.com"
+    siteUrl: "https://fadel-blog.netlify.com"
   },
   plugins: [
     'gatsby-plugin-catch-links',
