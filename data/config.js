@@ -5,6 +5,7 @@ const config = {
   siteRss: '/rss.xml',
   themeColor: '#9400d3',
   backgroundColor: 'rgb(57, 62, 70)',
+  googleAnalyticsID: 'UA-156067768-1'
 }
 
 module.exports = config
