@@ -19,3 +19,9 @@ p, div {
   max-width: 33.3%;
   padding: 10px;
 }
+
+.content p {
+  line-height: 1.5;
+  margin: 22px 0px;
+  text-align: justify;
+}

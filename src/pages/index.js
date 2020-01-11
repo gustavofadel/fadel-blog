@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Posts from '../components/Posts'
+import SEO from '../components/SEO/SEO'
 
 import 'minireset.css'
 
@@ -12,6 +13,7 @@ export default class Index extends Component {
 
     return (
       <Layout>
+        <SEO />
         <Posts data={data} />
       </Layout>
     )

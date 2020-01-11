@@ -1,21 +1,27 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import './Layout.css'
 
 import Container from '../Container'
-import Header from '../Header'
 import Sidebar from '../Sidebar'
 
-export default ({ children, title }) => (
+import config from '../../../data/config'
+import favicon from '../../../static/favicon.png'
+
+export default ({ children }) => (
   <div>
-    <Header title={title} />
+    <Helmet>
+      <meta name="description" content={config.siteDescription} />
+      <link rel="icon" href={favicon} />
+    </Helmet>
     <main role="main">
       <Container>
         {children}
         <aside>
           <Sidebar 
             title="About me"
-            description="A young developer who is always learning something new"
+            description="A young developer who loves programming"
           />
           <Sidebar 
             title="About the blog"
