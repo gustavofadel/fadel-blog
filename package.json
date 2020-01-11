@@ -12,11 +12,13 @@
   "dependencies": {
     "gatsby": "^2.18.21",
     "gatsby-plugin-catch-links": "^2.1.24",
+    "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-remark": "^2.6.48",
     "lodash": "^4.17.15",
     "minireset.css": "0.0.6",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
   }
 }

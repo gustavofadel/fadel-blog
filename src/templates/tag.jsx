@@ -4,36 +4,38 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Posts from '../components/Posts'
 
-import 'minireset.css'
-
-export default class Index extends Component {
+export default class Tag extends Component {
   render () {
-    const { data } = this.props
+    const { data, pathContext } = this.props
+    const { tag } = pathContext
 
     return (
       <Layout>
-        <Posts data={data} />
+        <div>
+          <h2 style={{ fontSize: '22px', padding: '0px 15px' }}>
+            Posts com a tag: {tag}
+          </h2>
+          <Posts data={data}/>
+        </div>
       </Layout>
     )
   }
 }
 
 export const pageQuery = graphql`
-  query {
+  query TagPage($tag: String) {
     allMarkdownRemark(
-      limit: 2000
-      sort: {fields: [fields___prefix], order: DESC}
-      filter: { frontmatter: { draft: { ne: true } } }
-      ) {
+      limit: 1000
+      sort: { fields: [fields___prefix], order: DESC }
+      filter: { frontmatter: { tags: { in: [$tag] }, draft: { ne: true } } }
+    ) {
       edges {
         node {
           fields {
             slug
           }
-          timeToRead
           frontmatter {
             title
-            tags
             date(formatString: "DD/MM/YYYY")
             description
           }
