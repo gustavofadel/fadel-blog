@@ -1,13 +1,14 @@
 ---
-title: 'About me'
-date: '2020-01-10'
-description: 'A short summary about me'
+title: "About me"
+date: "2020-01-11"
+description: "A short summary about me"
 draft: false
 tags:
     - Blog
-    - Primeiro post
+    - Curriculum
     - Lucas Maia
+    - CV
+    - Fadel
 ---
 
-I am a 16 year old person who is interested in programming and wants to help 
-people through technology.
+A student who loves learning and applying new technologies in the programming world. I have experience with Java (Desktop and Mobile), React Native, NodeJS and MySQL, but I also have knowledge in ReactJS. I can work well in a team and also develop individual projects.

@@ -24,7 +24,7 @@ export const pageQuery = graphql`
   query {
     allMarkdownRemark(
       limit: 2000
-      sort: {fields: [fields___prefix], order: DESC}
+      sort: { fields: [fields___prefix], order: DESC }
       filter: { frontmatter: { draft: { ne: true } } }
       ) {
       edges {
@@ -32,7 +32,6 @@ export const pageQuery = graphql`
           fields {
             slug
           }
-          timeToRead
           frontmatter {
             title
             tags

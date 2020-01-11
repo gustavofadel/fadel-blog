@@ -23,7 +23,11 @@ export default class Post extends Component {
           width: '100%'
         }}>
           <SEO title={title} url={slug} description={description} article />
-          <h2 style={{ fontSize: '22px', fontWeight: 'bold' }}>{title}</h2>
+          <h2 style={{ 
+            color: '#9400d3', 
+            fontSize: '22px', 
+            fontWeight: 'bold' 
+          }}>{title}</h2>
           <p>
             {tags.map(
               tag => <Link 

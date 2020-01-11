@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import './Layout.css'
 
 import Container from '../Container'
+import Header from '../Header'
 import Sidebar from '../Sidebar'
 
 import config from '../../../data/config'
@@ -15,17 +16,19 @@ export default ({ children }) => (
       <meta name="description" content={config.siteDescription} />
       <link rel="icon" href={favicon} />
     </Helmet>
+    <Header />
     <main role="main">
       <Container>
         {children}
         <aside>
           <Sidebar 
-            title="About me"
-            description="A young developer who loves programming"
+            title="Who is Gustavo Fadel?"
+            description="I am a 16 year old person who is interested in 
+            programming and wants to help people through technology."
           />
           <Sidebar 
-            title="About the blog"
-            description="This blog was built with GatsbyJS"
+            title="What is GatsbyJS?"
+            description="Gatsby is a blazing fast modern site generator for React."
           />
         </aside>
       </Container>

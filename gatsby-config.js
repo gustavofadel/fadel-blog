@@ -3,7 +3,8 @@ const config = require('./data/config')
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
-    description: config.siteDescription
+    description: config.siteDescription,
+    siteUrl: "https://codestackbrasil.netlify.com"
   },
   plugins: [
     'gatsby-plugin-catch-links',
